@@ -18,12 +18,9 @@
 #include "BST.h"
 
 
+// 创建搜索二叉树
 
-template<typename DataType> 
-BSTree<DataType>::BSTree()
-{
-    return 
-}
+
 
 
 
@@ -31,8 +28,6 @@ BSTree<DataType>::BSTree()
 int main(int argc, char* argv[])
 {
 
-    BSTreeNode *p = new BSTreeNode();
     cout<<"test2"<<endl;
-    cout<<p<<endl;
     return 0;
 }

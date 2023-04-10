@@ -42,7 +42,7 @@ class BSTree
 {
     typedef K2::BSTreeNode<DataType>  Node;
     public:
-        BSTree();           // 默认构造函数
+        BSTree(){root = Create();}           // 默认构造函数
         BSTree(const BSTree<DataType>& b);        // 拷贝构造
         ~BSTree();          // 析构函数
         Node* Create();                           // 创建搜索二叉树，并返回指向该二叉树的首地址
@@ -54,8 +54,7 @@ class BSTree
 
     private:
         Node* root = nullptr;           // 指向该二叉树的头指针
-        
-      
+    
 };
 
 
