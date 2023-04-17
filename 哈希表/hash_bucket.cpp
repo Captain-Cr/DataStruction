@@ -8,7 +8,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <string>
+#include <string.h>
 
 
 
@@ -27,12 +27,12 @@ typedef struct hashTable{
 }table;
 
 // 声明哈希桶相关操作函数
-void initHashTable(table *t);                   // 初始化哈希桶
-int hashFuction(const char* key);              // 哈希函数，根据生成哈希值
-node* lookup(const char* key);                 // 根据key值查找相应的值
-int insertnode(table *t, char *key, char* value);          // 将数据插入到哈希桶当中
-const char* get(const char* key);               // 根据输入的key字符串，返回相应的value字符串
-void display(table *t);                                 // 打印hash表
+void initHashTable(table *t);                               // 初始化哈希桶
+int hashFuction(const char* key);                           // 哈希函数，根据生成哈希值
+node* lookup(const char* key);                              // 根据key值查找相应的值
+int insertnode(table *t, char *key, char* value);           // 将数据插入到哈希桶当中
+const char* get(const char* key);                           // 根据输入的key字符串，返回相应的value字符串
+void display(table *t);                                     // 打印hash表
 
 
 

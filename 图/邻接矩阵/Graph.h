@@ -6,6 +6,9 @@ using namespace std;
 const int MaxSize = 10;         // 图中最多顶点个数
 int visited[MaxSize] = {0};     // 全局变量visited初始化
 
+/*
+    邻接矩阵使用顺序表，不用链接表
+*/
 template <typename DataType>
 class MGraph
 {
